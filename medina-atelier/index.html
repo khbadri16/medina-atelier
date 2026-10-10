@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medina Atelier — Handmade in Algeria</title>
+  <meta name="description" content="Demo e-commerce store for handmade Algerian crafts: ceramics, textiles, copper, olive wood and leather. Cash on delivery across Algeria.">
+  <meta name="theme-color" content="#0e0c0a">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Medina Atelier — Handmade in Algeria">
+  <meta property="og:description" content="A demo storefront with catalogue search, cart, cash-on-delivery checkout and an admin dashboard.">
+  <meta property="og:image" content="assets/preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="src/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+
+  <div class="announce">Free delivery on orders over 15 000 DA · Cash on delivery across Algeria · Code <b>BIENVENUE10</b> for 10% off</div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#/" aria-label="Medina Atelier home">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 28V14a10 10 0 0 1 20 0v14" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M11 28V16a5 5 0 0 1 10 0v12" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M3 28h26" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <span>Medina <em>Atelier</em></span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="#/shop" data-nav="shop" data-cat="">Shop all</a>
+        <a href="#/shop?category=ceramics" data-nav="shop" data-cat="ceramics">Ceramics</a>
+        <a href="#/shop?category=textiles" data-nav="shop" data-cat="textiles">Textiles</a>
+        <a href="#/shop?category=copper" data-nav="shop" data-cat="copper">Copper</a>
+        <a href="#/shop?category=leather" data-nav="shop" data-cat="leather">Leather</a>
+      </nav>
+      <form class="search" id="search" role="search">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <label class="sr-only" for="q">Search the store</label>
+        <input id="q" name="q" type="search" placeholder="Search" autocomplete="off">
+      </form>
+      <div class="header-actions">
+        <a class="icon-btn" href="#/orders" data-nav="orders" aria-label="My orders" title="My orders">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8H8"/><path d="M16 12H8"/><path d="M12 16H8"/></svg>
+        </a>
+        <button class="icon-btn cart-btn" id="cart-btn" type="button" aria-label="Open cart">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cart-count" hidden>0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#/"><span>Medina <em>Atelier</em></span></a>
+        <p>Handmade objects from Algerian artisans, delivered across the country, with payment in cash on delivery.</p>
+      </div>
+      <nav aria-label="Shop">
+        <h2>Shop</h2>
+        <a href="#/shop?category=ceramics">Ceramics</a>
+        <a href="#/shop?category=textiles">Textiles</a>
+        <a href="#/shop?category=copper">Copper &amp; brass</a>
+        <a href="#/shop?category=wood">Olive wood</a>
+      </nav>
+      <nav aria-label="Help">
+        <h2>Your account</h2>
+        <a href="#/orders">My orders</a>
+        <a href="#/checkout">Checkout</a>
+        <a href="#/admin">Store admin (demo)</a>
+      </nav>
+      <div>
+        <h2>Delivery</h2>
+        <p>Home delivery or stop-desk pickup in every wilaya. Free over 15 000 DA.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p><b>Demo project.</b> Medina Atelier is a fictional store. No real orders, payments or deliveries take place, and data stays in your browser.</p>
+      <p>© <span id="year">2026</span> · Built by <a href="https://github.com/khbadri16" target="_blank" rel="noopener">Khelfat Badereddine</a></p>
+    </div>
+  </footer>
+
+  <div class="drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+    <div class="drawer-backdrop"></div>
+    <div class="drawer-panel">
+      <div class="drawer-head">
+        <h2 id="cart-title">Your cart</h2>
+        <button type="button" class="icon-btn drawer-close" data-close aria-label="Close cart">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+      <div class="drawer-body"></div>
+      <div class="drawer-foot" hidden></div>
+    </div>
+  </div>
+
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+</body>
+</html>

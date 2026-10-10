@@ -1,0 +1,11 @@
+{
+  "name": "medina-atelier",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo e-commerce storefront for a fictional Algerian crafts brand: catalogue, cart, cash-on-delivery checkout and an admin dashboard.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
